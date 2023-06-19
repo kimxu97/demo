@@ -1,0 +1,45 @@
+// styles/element/index.scss
+/* 只需要重写你需要的即可 */
+// types
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'white': #d30e0e,
+    'black': #000000,
+    'primary': (
+      'base': #299D91,
+    ),
+    'success': (
+      'base': #537224,
+    ),
+    'warning': (
+      'base': #935b00,
+    ),
+    'danger': (
+      'base': #ce0707,
+    ),
+    'error': (
+      'base': #b90c0c,
+    ),
+    'info': (
+      'base': #F2F2F2,
+    ),
+  ),
+  $text-color:  (
+    'primary': #333333,
+    'regular': #333333,
+    'secondary': #333333,
+    'placeholder': #CCCCCC,
+    'disabled': #c0c4cc,
+  ),
+  $border-color:(
+    '': #E1E1E1,
+    'light': #e4e7ed,
+    'lighter': #ebeef5,
+    'extra-light': #f2f6fc,
+    'dark': #d4d7de,
+    'darker': #cdd0d6,
+  ),
+);
+@use "element-plus/theme-chalk/src/index.scss" as *;
+
+
